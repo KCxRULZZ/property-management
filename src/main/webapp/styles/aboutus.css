@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/*Styles for the background image in index page*/
+.banner-index{
+  width: 100%;
+  height: 100vh;
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),
+  url('images/Background7.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: transitionIn 0.75s;
+}
+
+/* Styles for the index title content*/
+.content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.content h1{
+  font-size: 70px;
+  margin-top: 80px;
+  transition: 0.3s;
+}
+
+.content p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+/* Hover styles for h1 and p tags */
+.content h1:hover{
+  font-size: 75px;
+}
+
+.content p:hover{
+  font-size: 35px;
+}
+
+/* Styles for the section */
+.section{
+  background-color: white;
+  padding:15px 9%;
+  padding-top: 60px;
+  margin-top: 10px;
+}
+
+.section p{
+  text-align: justify;
+  font-size: 30px;
+}
+
+.section .heading{
+  text-align: center;
+  padding-bottom: 15px;
+  color:#181818;
+  text-shadow: 0 5px 10px rgba(0,0,0,.2);
+  font-size: 40px;
+}
+
+/*nagiation bar - logo styles*/
+.logo{
+  width: 120px;
+  height: 100px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logo:hover{
+  width: 130px;
+  height: 110px;
+}
+
+/*navigation bar container styles*/
+nav{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.70);
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12; /*overlap settings*/
+}
+
+/*navigation bar styles*/
+.nav-bar{
+  width: 70%;
+  margin:auto;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*naviagtion bar list styles*/
+.nav-bar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+/*navigation bar list content styles*/
+.nav-bar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* navigation bar red line animation ( Reference - Easy Tutorials : https://www.youtube.com/watch?v=PgAZ8KzfhO8 ) */
+.nav-bar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #ee5500;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+/*user email styles*/
+.user-display{
+  color:rgb(255, 115, 0); 
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 14px; 
+  cursor: pointer;
+}
+
+.user-display:hover{
+  color: #e64210;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/*logout btn styles*/
+.logout{
+  font-size: 14px;
+  color: gray;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.logout:hover{
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/*navigation bar red line animation*/
+.nav-bar ul li:hover::after{
+  width: 100%;
+}
+
+#nav a {
+  color:#fff;
+  text-decoration:none;
+  outline:0;
+}
+
+#nav a:active, #nav a:focus, #nav a:hover {
+  color:red; 
+}
+
+#nav a.highlite {
+  color:red;
+}
+
+/* Responsive Styles - w3schools*/
+@media (max-width: 1200px) { /*When the page size gets less than 1200px. These styles will effect*/
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar ul li::after{
+    bottom: -5px;
+  }
+
+  .logo {
+    order: -1;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+
+  li {
+    list-style: none;
+    padding-bottom: 10px;
+  }
+
+  .user-display {
+    order: 2;
+  }
+
+  .logout {
+    order: 3;
+    padding-top: 20px;
+  }
+}
+
+@media(max-width: 768px){
+  .nav-bar{
+    width: 50%;
+  }
+
+  .nav-bar ul li::after{
+    bottom: 4px;
+  }
+}
+
+
+/* mainpart */
+
+.aboutmain{
+    margin-top: 155px;
+    margin-bottom: 20px;
+ }
+ .box1{
+    
+    min-height:300px ;
+    display: flex;
+    justify-content: space-around;
+ }
+ .missionpic{
+    background-size: cover;
+    background-image: url(images/mission.jpg);
+    width: 400px;
+    height: 400px;
+    background-color: #FC9300;
+ }
+ .missiontxt{
+    width: 800px;
+    height: 400px;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 60px;
+    
+ }
+ 
+ .box2{
+    margin-top: 20px;
+    min-height:300px ;
+    display: flex;
+    justify-content: space-around;
+ }
+ 
+ .visiontxt{
+    width: 800px;
+    height: 400px;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 60px;
+ }
+ 
+ .visionpic{
+    background-size: cover;
+    background-image: url(images/vision\ \(1\).jpg);
+    width: 400px;
+    height: 400px;
+    background-color: #FC9300;
+ }
+ .box3{
+   
+    margin-top: 20px; 
+    min-height:300px ;
+    display: flex;
+    justify-content: space-around;
+ }
+ 
+ .targetpic{
+    background-size: cover;
+    background-image: url(images/target.jpg);
+    width: 400px;
+    height: 400px;
+    background-color: #FC9300;
+ }
+ .targettxt{
+    width: 800px;
+    height: 400px;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 60px;
+ }
+ .fqpic{
+ width: 90%;
+ height: 500px;
+ background-size: cover;
+ background-position: top;
+ background-image: url(images/fq.jpg);
+ margin-left: 90px;
+ }
+ .fq{
+    text-align: center;
+    margin-bottom: 25px;
+ }
+ dl{
+    margin-left: 50px;
+ }
+ dt{
+    margin-top: 20px;
+ }
+
+ dd{
+    margin-bottom: 50px;
+ }
+
+
+
+/*about us page ending place*/
+
+
+
+/* Footer styles */
+.footer {
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+  url('images/footerbg.jpg');
+  background-size: cover;
+  background-position: 3px;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.logoaddress img{
+   height: 100%;
+   width: 100%;
+}
+
+/* Footer column styles */
+.footer-col {
+  width: 25%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Footer column heading styles */
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Pseudo-element styles for footer column heading */
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+/* Footer column list item styles */
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* Footer column list item a and p tag styles */
+.footer-col ul li a,
+.footer-col p {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+/* Hover styles */
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer p{
+  color: #bbbbbb;
+}
+
+/* Responsive styles for footer columns */
+@media (max-width: 1200px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  } 
+}
+

@@ -1,0 +1,20 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Group Details & Contribution:
+
+- Group Number : SE_OOP_2023_S2_MLB_WD_G209
+
+- Project Title: Online Property Management System
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+
+	- Student ID    : IT22346254
+	- Student Name  : Fernando M K C   
+	- Student Email : it22346254@my.sliit.lk
+	
+	- Contribution  : House Class (House.java)
+				Seller Property add Operations (SellerDBUtil.java, SellerServlet.java, UpdatePropertyServlet.java, DeletePropertyServlet.java)
+				House Insert Operation (AddHouseServlet.java)
+				Validation -> add_property.js
+				Front-end -> seller_profile.jsp, update_property.jsp, add_house.jsp (including CSS files)

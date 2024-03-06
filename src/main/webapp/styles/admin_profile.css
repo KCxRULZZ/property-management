@@ -1,0 +1,147 @@
+@charset "ISO-8859-1";
+
+/* Styles for the heading */
+.heading{
+  text-align: center;
+  padding-top: 30px;
+  color:#181818;
+  text-shadow: 0 5px 10px rgba(0,0,0,.2);
+  font-size: 40px;
+}
+
+/* Styles for the buyer table */
+.buyer-table{
+  width: 84%;
+  margin: 100px auto;
+  margin-top: 30px;
+  background-color: #f3f3f3;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  padding: 30px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* Hover styles for the buyer table */
+.buyer-table:hover{
+  transform: scale(1.03);
+  box-shadow: 0 10px 15px rgba(0,0,0,.3);
+}
+
+.payment-table{
+  width: 72%;
+  margin: 100px auto;
+  margin-top: 30px;
+  background-color: #f3f3f3;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  padding: 30px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* Hover styles for the buyer table */
+.payment-table:hover{
+  transform: scale(1.03);
+  box-shadow: 0 10px 15px rgba(0,0,0,.3);
+}
+
+/* Common styles for the tables */
+.table-style{
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-family: Agenda-Light, sans-serif;
+  font-weight: 100; 
+  background: rgb(255, 128, 0); color: rgb(0, 0, 0);
+  text-rendering: optimizeLegibility;
+  border-radius: 5px; 
+}
+
+/* Styles for the table header */
+.table-style thead tr th { 
+  font-weight: 600; 
+}
+
+/* Styles for table header and table data */
+.table-style thead th, .table-style tbody td { 
+  padding: 10px; 
+  font-size: 16px;
+}
+
+
+.table-style tbody td { 
+  padding: .8rem; 
+  font-size: 16px;
+  color: #444; 
+  background: #eee;
+  transition: 0.3s;
+}
+
+/* Styles for alternating rows in the table body - w3school */
+.table-style tbody tr:not(:last-child) { 
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;  
+}
+
+/* Styles for the update button */
+.update-btn{
+  width: 80px;
+  height:30px;
+  background-color: #0078D7;
+  font-size: 14px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover styles for the update button */
+.update-btn:hover{
+  font-size: 16px;
+  background-color: #005a9e;
+}
+
+/* Styles for the delete button */
+.delete-btn{
+  width: 80px;
+  height:30px;
+  background-color: rgb(224, 0, 0);
+  font-size: 14px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover styles for the delete button */
+.delete-btn:hover{
+  font-size: 16px;
+  background-color: rgb(168, 1, 1);
+}
+
+
+.delete-btn a, .update-btn a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* responsive table - w3school*/
+@media screen and (max-width: 600px) {
+  .table-style caption { background-image: none; }
+  .table-style thead { display: none; }
+  .table-style tbody td { 
+    display: block; 
+    padding: .6rem; 
+  }
+  .table-style tbody tr td:first-child { 
+    background: #666; 
+    color: #fff; 
+  }
+  .table-style tbody td:before { 
+    content: attr(data-th); 
+    font-weight: bold;
+    display: inline-block;
+    width: 6rem;  
+  }
+}

@@ -1,0 +1,123 @@
+@charset "ISO-8859-1";
+
+@charset "ISO-8859-1";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)),
+    url('images/Background6.jpg');
+    background-size: cover;
+    line-height: 1.5;
+  	font-family: 'Poppins', sans-serif;
+}
+
+/* Styles for the registration form container */
+.add_property {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 600px;
+    margin: 100px auto;
+    background-color:  rgba(241, 241, 241, 0.8); ;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    padding: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  /* Hover styles for the registration form container */
+  .add_property:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+  }
+  
+  .add_property form {
+    max-width: 500px;
+  }
+  
+  /* Styles for the input types */
+  .add_property input[type="text"],
+  .add_property input[type="email"],
+  .add_property input[type="tel"],
+  .add_property textarea,
+  .add_property input[type="date"],
+  .add_property input[type="password"],
+  .add_property select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: 80%;
+  }
+  
+  /* Styles for select input type */
+  .add_property select {
+    display: block;
+    width: 104%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Styles for radio button */
+  .add_property input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .add_property label {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .add_property p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .add_property a {
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
+  
+  .add_property a:hover {
+    color: rgb(141, 7, 2);
+    font-size: 18px;
+  }
+  
+  /* Styles for the checkbox */
+  .add_property input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Styles for submit button */
+  .add_property input[type="submit"] {
+    display: block;
+    width: 104%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #121212;
+    background-color: #FC9300;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Hover styles for submit button */
+  .add_property input[type="submit"]:hover {
+    background-color: #dd6700;
+  }

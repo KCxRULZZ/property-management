@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>com.PropertyManagementSystem.LoginServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>register</servlet-name>
+		<servlet-class>com.PropertyManagementSystem.Register</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>register</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateUser</servlet-name>
+		<servlet-class>com.PropertyManagementSystem.UpdateUserServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>updateUser</servlet-name>
+		<url-pattern>/updateUser</url-pattern>
+	</servlet-mapping>  
+	
+	<servlet>
+		<servlet-name>addProperty</servlet-name>
+		<servlet-class>com.PropertyManagementSystem.AddPropertyServlet</servlet-class>
+	</servlet>   
+	
+	<servlet-mapping>
+		<servlet-name>addProperty</servlet-name>
+		<url-pattern>/addProperty</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateProperty</servlet-name>
+		<servlet-class>com.PropertyManagementSystem.UpdatePropertyServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>updateProperty</servlet-name>
+		<url-pattern>/updateProperty</url-pattern>
+	</servlet-mapping>  
+	
+	<servlet>
+		<servlet-name>addHouse</servlet-name>
+		<servlet-class>com.PropertyManagementSystem.AddHouseServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>addHouse</servlet-name>
+		<url-pattern>/addHouse</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>addBookmark</servlet-name>
+		<servlet-class>com.PropertyManagementSystem.AddBookmarkServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>addBookmark</servlet-name>
+		<url-pattern>/addBookmark</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Payment</servlet-name>
+		<servlet-class>com.PropertyManagementSystem.PaymentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Payment</servlet-name>
+		<url-pattern>/Payment</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdatePayment</servlet-name>
+		<servlet-class>com.PropertyManagementSystem.PaymentUpdateServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdatePayment</servlet-name>
+		<url-pattern>/UpdatePayment</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeletePayment</servlet-name>
+		<servlet-class>com.PropertyManagementSystem.PaymentDeleteServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeletePayment</servlet-name>
+		<url-pattern>/DeleteData</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>addApartment</servlet-name>
+		<servlet-class>com.PropertyManagementSystem.AddApartmentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>addApartment</servlet-name>
+		<url-pattern>/addApartment</url-pattern>
+	</servlet-mapping> 
+	
+	<servlet>
+		<servlet-name>addLand</servlet-name>
+		<servlet-class>com.PropertyManagementSystem.AddLandServlet</servlet-class>
+	</servlet>  
+	
+	<servlet-mapping>
+		<servlet-name>addLand</servlet-name>
+		<url-pattern>/addLand</url-pattern>
+	</servlet-mapping> 
+         
+</web-app>

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Styles for the login container */
+.login-container {
+    width: 400px;
+    margin: 100px auto;
+    background-color: rgba(243, 243, 243, 0.88); 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    padding: 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+    align-content: center;
+  }
+
+  /* Styles for the background image in login page */
+ .banner-login{
+    width: 100%;
+    height: 100vh;
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.60),rgba(0, 0, 0, 0.60)),
+    url('images/Background4.jpg');
+    background-size: cover;
+ } 
+
+
+/* Styles for the login content*/
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+  }
+  
+  /* Hover styles for the login container */
+  .login-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .3);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 45px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  
+  /* Styles for email and password inputs */
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Styles for the submit button */
+  input[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #FC9300;
+    color: #282828;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* Hover styles for the submit button */
+  input[type="submit"]:hover {
+    background-color: #dd6700;
+  }
+  
+  /* Styles for the Create Account link */
+  .create-account {
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  /* Hover styles for the Create Account link */
+  .create-account:hover {
+    color: gray;
+    font-size: 18px;
+  }
